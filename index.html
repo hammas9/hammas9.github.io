@@ -16,14 +16,14 @@
         #pic { float: right; margin: -30px 0 0 0; }
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color:blue; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: font-family: Georgia, Serif; font-size: 16px; color: #000; font-weight: normal; }
+        p { margin: 0 0 2px 0; }
+        a { color:black; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: blue; }
         ul { margin: 0 0 32px 17px; }
         #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        #objective p { font-family: Georgia, Serif; font-style: color: #000; }
+        dt { font-style:; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
      </style>
@@ -48,18 +48,15 @@
                 
         <div id="objective">
             <p>
-                I am a second year PhD student at the University of Iowa advised by <a href = "https://sparta.cs.uiowa.edu/people/rishab/" >Dr. Rishab Nithayanand</a>. 
-                 I am a firm believer in online anonymity, privacy and accessibility and am always interested in working on projects that further one of these causes. 
-                 I previously worked in the <a href = "https://sbasse.lums.edu.pk/facilities/technology-people-initiative-tpi" >Technology for People Initiative</a> and was advised
-                 by <a href = "https://lums.edu.pk/lums_employee/422" >Dr. Fareed Zaffar</a>
+                I am a fourth year PhD student at <b>The University of Iowa</b> advised by <a href = "https://sparta.cs.uiowa.edu/people/rishab/" >Dr. Rishab Nithayanand</a>. 
+                 As part of the <a href = "https://sparta.cs.uiowa.edu/" >SPARTA Lab</a>, I work on better understanding next-generation networking technologies, specifically IPv6 and Starlink.  and internet censorship. I am currently an <a href = "https://www.opentech.fund/about/people/hammas-bin-tanveer/" >Information Controls Fellow</a> with the <a href="https://censoredplanet.org/">Censored Planet Lab</a> at <b>The University of Michigan</b> advised by <a href="https://ensa.fi/">Dr. Roya Ensafi</a>.
             </p>
 
         </br><label class="about" id="about" style="color:red; font-weight: 16px; font-size: 16px; margin-top:0px;">
-                            <a href="#Updates">Updates</a>
-                            | <a href="#Projects">Projects</a>
+                            <a href="#Updates">Publications</a>
                             | <a href="#Work">Work Experience</a>
-                            | <a href="#Teaching">Teaching</a>
-                            | <a href="#Courses">Important Courses</a> 
+                            | <a href="#Projects">Current Work</a>
+                            |<a href="#Invited">Invited Talks</a>
         </div>
         
 
@@ -76,8 +73,102 @@
 
             </br>
 
-        <div id="Updates">
-            <dt>Updates</dt>
+
+
+
+        <div id="Publications">
+            <dt>Publications</dt>
+            <dd>
+                <h2>Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild</h2>
+                <p><strong>Hammas Bin Tanveer</strong>, Rachee Singh, Paul Pearce, Rishab Nithyanand </p>
+                <p><strong>USENIX Security '23</strong>
+                <img src="images/small_pdf_icon.png" width="19"
+                        height="19" alt="PDF" />
+                        <a href="https://www.usenix.org/system/files/sec23summer_233-bin_tanveer-prepub.pdf">PDF</a>
+                </p>
+
+                <br>
+
+                <h2>ProtoScan: Measuring censorship in IPv6</h2>
+                <p>Jack Wampler, <strong>Hammas Bin Tanveer</strong>, Rishab Nithyanand, Eric Wustrow </p>
+                <p><strong>FOCI '23 (Under Submission)</strong> 
+                <img src="images/small_pdf_icon.png" width="19"
+                        height="19" alt="PDF" />
+                        <a href="pdfs/foci.pdf">PDF</a>
+                </p> 
+                                    
+                
+            </dd>
+        </div>
+
+             <dd class="clear"></dd>
+
+             <dd class="clear"></dd>
+
+
+
+        <div id="Work">
+            <dt>Work Experience</dt>
+            <dd>
+                <h2>Visiting Researcher: The University of Michigan <span>2022 - </span></h2>
+                <p><a href = "https://censoredplanet.org/" >Censored Planet Lab</a></p>
+                
+                <br>
+
+                <h2>Information Controls Fellowship: Open Technology Fund <span>2022 - </span></h2>
+                <p><a href = "https://www.opentech.fund/about/people/hammas-bin-tanveer/" >Senior ICFP Fellow</a></p>
+
+
+                <br>
+
+                <h2>Research Assistant: The University of Iowa <span>2019 - </span></h2>
+                <p><a href = "https://sparta.cs.uiowa.edu/" >SPARTA Lab</a></p>
+                
+                <br>
+
+                <h2>Teaching Assistant: The University of Iowa <span>2019 - </span></h2>
+                <p>Programming Language Concepts (JavaScript and Haskell)</p>
+
+
+            </dd>
+
+        </div>    
+
+
+            <dd class="clear"></dd>
+
+            <dd class="clear"></dd>
+
+
+        <div id="Projects">
+            <dt>Current Work</dt>
+            <dd>
+                <h2>De-anonymization of Starlink users over VPN and Tor</h2>
+                <p>Starlink is an internet service which uses Lower-Earth Orbit Satellites to provide low-latency internet access to users around the world. In this work, we develop a de-anonymization attack on Tor and VPN users over Starlink.</p>
+                
+                <br>
+
+                <h2>Censorship of Tor bridges over IPv6</h2>
+                <p>Censorship circumvention tools like Tor now operate over both IPv4 and IPv6, keeping in line with the recent rise in adoption of IPv6. However, little is known about how censor states are adapting to the rise. In this work, we analyze the efficacy of the Great Firewall of China in blocking Tor bridges over IPv4 and IPv6. </p>
+
+                <br>
+
+                <h2>The Utility of Cyber Threat Intelligence in IPv6</h2>
+                <p>A project aimed at analyzing the efficacy of Threat Intelligence in the wake of IPv6. We measure the variance of the utility of Threat Intelligence when applied to IPv4 and IPv6. We aim to propose metrics to improve the efficacy of Cyber Threat Intelligence by leveraging insights into how malicious actors function differently in IPv4 and IPv6.</p>
+                
+
+
+            </dd>
+        </div>
+
+
+            <dd class="clear"></dd>
+
+            <dd class="clear"></dd>
+
+
+        <div id="Invited Talks">
+            <dt>Invited</dt>
             <dd>
                 <h2>I recently passed my Qualifying Exam! <span>September 2020</span></h2>
                 <img src="images/small_pdf_icon.png" width="19"
@@ -93,121 +184,19 @@
         </div>
 
 
-            <dd class="clear"></dd>
+            <dd class="clear"></dd>            
 
-
-
-        <div id="Projects">
-            <dt>Projects</dt>
-            <dd>
-                <h2>The Utility of Cyber Threat Intelligence for IPv6</h2>
-                <p>A project aimed at analyzing how useful Cyber Threat Intelligence would be in thewake  of  IPv6.   We  analyze  certain  trade  offs  between  home-grown,  commercial  andpublic blacklists.  We also test the efficacy of IP blocklists in the advent of IPv6.</p>
-                <p><strong>Supervisors</strong> 
-                <br /><a href = "https://sparta.cs.uiowa.edu/people/rishab/" >Dr. Rishab Nithayanand</a>
-                <br /><a href = "http://www.racheesingh.com/" >Rachee Singh</a>
-                <br /><a href = "https://www.cc.gatech.edu/~pearce/" >Dr. Paul Pearce</a>
-                
-                
-                <h2>Cyclone</h2>
-                <p>A project aimed at building resilient clouds with applications ranging from moving-target defense against denial-of-service and side-channel attacks to mitigating informa-tion leakage by cloning of entire virtual networks.</p>
-                <p><strong>Supervisors</strong> 
-                <br /><a href = "https://lums.edu.pk/lums_employee/422" >Dr. Fareed Zaffar</a>
-
-                
-                <h2>Youtube video description generation</h2>
-                <p>A project aimed at providing succinct and authentic description about a Youtube videousing machine learning techniques.</p>
-                <p><strong>Supervisors</strong> 
-                <br /><a href = "https://lums.edu.pk/lums_employee/422" >Dr. Fareed Zaffar</a>
-
-                
-                <h2>Malware detection using Provenance graphs</h2>
-                <p>A  project  aimed  to  detecting  malwares  of  varying  kinds  from  selected  provenance,collected by SPADE, by using machine learning techniques.</p>
-                <p><strong>Supervisors</strong> 
-                <br /><a href = "https://lums.edu.pk/lums_employee/422" >Dr. Fareed Zaffar</a>
-            </dd>
-        </div>
-            
-            
-
-
-            <dd class="clear"></dd>
         
-
-        <div id="Work">
-            <dt>Work Experience</dt>
-            <dd>
-                <h2>Research Assistant:  The University of Iowa <span>August 2019 - Present</span></h2>
-                <p><a href = "https://sparta.cs.uiowa.edu/" >The Security, Privacy, and Anonymity Research Team</a></p>
-                
-
-                <h2>Research Assistant:  Lahore University of Management Sciences <span>August 2018 - May 2019</span></h2>
-                <p><a href = "https://sbasse.lums.edu.pk/facilities/technology-people-initiative-tpi" >Technology for People Initiative</a></p>
-
-
-                <h2>Educative, Inc</h2>
-                <p>Developer Advocate and Course Designer</p>
-                <!-- <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-                <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
-                </ul>  -->
-            </dd>
-
-        </div>    
                         
             <dd class="clear"></dd>
-            
 
-        <div id="Teaching">
-            <dt>Teaching</dt>
-            <dd>
-                <h2>Teaching Assistant - University of Iowa <span>August 2019 - Present</span></h2>
-                <p><a href = "https://homepage.divms.uiowa.edu/~tinelli/classes/3820/Fall16/syllabus.shtml" >CS:3820 Programming Language Concepts  (JavaScript and Haskell)</a></p>
-
-                <h2>Teaching Assistant - LUMS <span>August 2018 - December 2018</span></h2>
-                <p><a href = "http://suraj.lums.edu.pk/~ro/?go=download&path=%2F2015-2016%2FFall+Semester+2015&file=CS+370-Operating+Systems-Basit+Shafiq.pdf" >CS - 370 Operating Systems</a></p>
-
-                <h2>Teaching Assistant - LUMS <span>January 2019 - May 2019</span></h2>
-                <p><a href = "http://suraj.lums.edu.pk/~ro/?go=download&path=%2F2017-2018%2FFall+2017&file=CS+100-Computational+Problem+Solving-Zaid+Saeed+Khan.pdf" >CS - 100 Computational Problem Solving</a></p>
-
-            </dd>
-        </div>   
 
 
         <dd class="clear"></dd>
 
-        <div id="Courses">
-            <dt>Important Courses</dt>
 
-            <dd>
-            <h2>Web Mining <span>January 2020 - May 2020</span></h2>
-                <p><img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="PDF" />
-                        <a href="pdfs/Web_mining_final.pdf">Measuring changes in Reddit users’ interests inresponse to coronavirus</a></p>    
-
-            <br/>
-            <h2>Topics in Computer Science <span>August 2019 - December 2019</span></h2>
-            <p>Security and Privacy <img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="PDF" />
-                        <a href="pdfs/Security_privacy_Project.pdf">DetecTOR: Detecting Tor Abuse Traffic in real time</a></p>
-
-            <p>Online Advertising and Tracking <img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="PDF" />
-                        <a href="pdfs/acceptable_ads.pdf">Should Users Accept Acceptable Ads?</a></p>
-                 
-
-
-            </dd>
-        </div>     
-            
-            
             <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd><a href = "https://sparta.cs.uiowa.edu/people/rishab/" >Dr. Rishab Nithayanand</a></dd>
-            <dd><a href = "https://lums.edu.pk/lums_employee/422" >Dr. Fareed Zaffar</a></dd>
-            
+
             <dd class="clear"></dd>
         </dl>
         
