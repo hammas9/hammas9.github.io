@@ -1,215 +1,318 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-     <title>Hammas Bin Tanveer</title>
-
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: font-family: Georgia, Serif; font-size: 16px; color: #000; font-weight: normal; }
-        p { margin: 0 0 2px 0; }
-        a { color:black; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: blue; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: color: #000; }
-        dt { font-style:; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hammas Bin Tanveer — Researcher • IPv6 • Censorship • Starlink</title>
+  <meta name="description" content="Hammas Bin Tanveer — Researcher focused on IPv6 scanning & censorship measurement, Starlink networking, and Internet security. SpaceX (Starlink), University of Iowa SPARTA Lab." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;--panel:#111217;--ink:#e6e6e9;--muted:#a9acb6;--brand:#7dd3fc;--accent:#38bdf8;--line:#1e2030;--chip:#1b1d2a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{color:#bfe7ff}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{position:sticky;top:0;background:rgba(11,12,16,0.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover}
+    .title{font-weight:700;letter-spacing:0.2px}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{font-weight:500;color:var(--muted)}
+    .menu a:hover{color:var(--ink)}
+    .hero{padding:56px 0;display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px;align-items:center}
+    .hero h1{font-size:42px;line-height:1.1;margin:0 0 14px}
+    .lead{color:#cbd0db;font-size:18px}
+    .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .chip{background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:#d7dae3}
+    .cta{display:flex;gap:12px;margin-top:22px}
+    .btn{padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-weight:600}
+    .btn.primary{background:linear-gradient(135deg,#0ea5e9,#22d3ee);border:none;color:#06121a}
+    section{padding:28px 0;border-top:1px solid var(--line)}
+    h2{font-size:24px;margin:0 0 12px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}
+    .muted{color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .timeline{position:relative;padding-left:22px}
+    .timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--line)}
+    .t-item{position:relative;margin-bottom:16px}
+    .t-item::before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(56,189,248,0.15)}
+    .pub{display:grid;grid-template-columns:48px 1fr;gap:14px;margin-bottom:14px}
+    .badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#0f172a;border:1px solid var(--line);font-size:12px;color:#cfeaff}
+    .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#a9acb6;font-size:14px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Hammas Bin Tanveer",
+    "url":"https://hammas9.github.io/",
+    "affiliation": [{"@type":"Organization","name":"SpaceX Starlink"},{"@type":"CollegeOrUniversity","name":"University of Iowa"}],
+    "jobTitle":"Data Engineer II (Network Performance)",
+    "sameAs":[
+      "https://www.linkedin.com/in/hammas-bin-tanveer-02aa12123/",
+      "https://scholar.google.com/citations?user=nwkNbNIAAAAJ&hl=en",
+      "https://dl.acm.org/doi/10.1145/3624354.3630586",
+      "https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-
-    <div id="page-wrap">
-    
-        <img src="images/profile_chi.jpg" alt="Photo of Cthulu" id="pic" width="260" height="380" />
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">Hammas Bin Tanveer</h1>
-        
-            <p>
-                Email: <a class="email" href="mailto:Firstname.com">firstname-lastname@uiowa.edu</a>
-            </p>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="images/profile_chi.jpg" alt="Hammas Bin Tanveer" class="avatar" />
+          <div>
+            <div class="title">Hammas Bin Tanveer</div>
+            <div class="muted" style="font-size:13px">IPv6 • Censorship Measurement • Satellite Networking</div>
+          </div>
         </div>
-                
-        <div id="objective">
-            <p>
-                I am a fourth year PhD student at <b>The University of Iowa</b> advised by <a href = "https://sparta.cs.uiowa.edu/people/rishab/" >Dr. Rishab Nithayanand</a>. 
-                 As part of the <a href = "https://sparta.cs.uiowa.edu/" >SPARTA Lab</a>, I work on better understanding next-generation networking technologies, specifically IPv6 and Starlink. I am also interested in studying global internet censorship systems and how the adapt to the rising adoption of IPv6. I am currently an <a href = "https://www.opentech.fund/about/people/hammas-bin-tanveer/" >Information Controls Fellow</a> with the <a href="https://censoredplanet.org/">Censored Planet Lab</a> at <b>The University of Michigan</b> advised by <a href="https://ensa.fi/">Dr. Roya Ensafi</a>.
-            </p>
-
-        </br><label class="about" id="about" style="color:red; font-weight: 16px; font-size: 16px; margin-top:0px;">
-                            <a href="#Updates">Publications</a>
-                            | <a href="#Work">Work Experience</a>
-                            | <a href="#Projects">Current Work</a>
-                            |<a href="#Invited">Invited Talks</a>
+        <div class="menu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience & Education</a>
+          <a href="#publications">Publications</a>
+          <a href="#talks">Invited Talks</a>
+          <a href="#media">Media & Mentions</a>
+          <a href="#contact">Contact</a>
         </div>
-        
-
-
-
-        <div class="clear"></div>
-        
-
-
-        <dl>
-
-
-
-
-            </br>
-
-
-
-
-        <div id="Publications">
-            <dt>Publications</dt>
-            <dd>
-                <h2>Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild</h2>
-                <p><strong>Hammas Bin Tanveer</strong>, Rachee Singh, Paul Pearce, Rishab Nithyanand </p>
-                <p><strong>USENIX Security '23</strong>
-                <img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="PDF" />
-                        <a href="https://www.usenix.org/system/files/sec23summer_233-bin_tanveer-prepub.pdf">PDF</a>
-                </p>
-
-                <br>
-
-                <h2>ProtoScan: Measuring censorship in IPv6</h2>
-                <p>Jack Wampler, <strong>Hammas Bin Tanveer</strong>, Rishab Nithyanand, Eric Wustrow </p>
-                <p><strong>FOCI '23 (Under Submission)</strong> 
-                <img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="PDF" />
-                        <a href="pdfs/foci.pdf">PDF</a>
-                </p> 
-                                    
-                
-            </dd>
-        </div>
-
-             <dd class="clear"></dd>
-
-             <dd class="clear"></dd>
-
-
-
-        <div id="Work">
-            <dt>Work Experience</dt>
-            <dd>
-                <h2>Visiting Researcher: The University of Michigan <span>2022 - </span></h2>
-                <p><a href = "https://censoredplanet.org/" >Censored Planet Lab</a></p>
-                
-                <br>
-
-                <h2>Information Controls Fellowship: Open Technology Fund <span>2022 - </span></h2>
-                <p><a href = "https://www.opentech.fund/about/people/hammas-bin-tanveer/" >Senior ICFP Fellow</a></p>
-
-
-                <br>
-
-                <h2>Research Assistant: The University of Iowa <span>2019 - </span></h2>
-                <p><a href = "https://sparta.cs.uiowa.edu/" >SPARTA Lab</a></p>
-                
-                <br>
-
-                <h2>Teaching Assistant: The University of Iowa <span>2019 - </span></h2>
-                <p>Programming Language Concepts (JavaScript and Haskell)</p>
-
-
-            </dd>
-
-        </div>    
-
-
-            <dd class="clear"></dd>
-
-            <dd class="clear"></dd>
-
-
-        <div id="Projects">
-            <dt>Current Work</dt>
-            <dd>
-                <h2>De-anonymization of Starlink users over VPN and Tor</h2>
-                <p>Starlink is an internet service which uses Lower-Earth Orbit Satellites to provide low-latency internet access to users around the world. In this work, we develop a de-anonymization attack on Tor and VPN users over Starlink.</p>
-                
-                <br>
-
-                <h2>Censorship of Tor bridges over IPv6</h2>
-                <p>Censorship circumvention tools like Tor now operate over both IPv4 and IPv6, keeping in line with the recent rise in adoption of IPv6. However, little is known about how censor states are adapting to the rise. In this work, we analyze the efficacy of the Great Firewall of China in blocking Tor bridges over IPv4 and IPv6. </p>
-
-                <br>
-
-                <h2>The Utility of Cyber Threat Intelligence in IPv6</h2>
-                <p>A project aimed at analyzing the efficacy of Threat Intelligence in the wake of IPv6. We measure the variance of the utility of Threat Intelligence when applied to IPv4 and IPv6. We aim to propose metrics to improve the efficacy of Cyber Threat Intelligence by leveraging insights into how malicious actors function differently in IPv4 and IPv6.</p>
-                
-
-
-            </dd>
-        </div>
-
-
-            <dd class="clear"></dd>
-
-            <dd class="clear"></dd>
-
-
-        <div id="Invited">
-            <dt>Invited Talks</dt>
-            <dd>
-                <h2>IETF 113 (MAPRG): Glowing in the dark <span>March 2022</span></h2>
-                <img src="images/small_pdf_icon.png" width="19"
-                        height="19" alt="" />
-                        <a href="https://datatracker.ietf.org/meeting/113/materials/agenda-113-maprg-03">Abstract</a>
-                 </br>
-                <img src="images/video.jpg" width="19"
-                        height="19" alt="" />
-                        <a href="https://www.youtube.com/watch?v=vYOBBT69IfI">Video</a>
-
-                <br>
-                <p></p>
-                
-                <h2> Introduction to Computer Networks and Their Applications (CS3640): Glowing in the dark <span>October 2022</span></h2>
-
-
-
-            </dd>
-        </div>
-
-
-            <dd class="clear"></dd>            
-
-        
-                        
-            <dd class="clear"></dd>
-
-
-
-        <dd class="clear"></dd>
-
-
-            <dd class="clear"></dd>
-
-            <dd class="clear"></dd>
-        </dl>
-        
-        <div class="clear"></div>
-    
+      </nav>
     </div>
+  </header>
 
+  <main class="container">
+    <section class="hero" id="about">
+      <div>
+        <h1 style="margin-bottom:8px">Hammas Bin Tanveer</h1>
+        <p class="lead">I work on network performance at <a href="https://www.starlink.com/" target="_blank" rel="noopener">SpaceX Starlink</a> and completed a Ph.D. in Computer Science at the University of Iowa’s <a href="https://sparta.cs.uiowa.edu/" target="_blank" rel="noopener">SPARTA Lab</a> (advised by Prof. Rishab Nithyanand). My research spans IPv6 scanning and censorship measurement, and empirical analysis of satellite networking systems.</p>
+        <div class="cta">
+          <a class="btn primary" href="#publications">Publications</a>
+          <a class="btn" href="assets/Hammas_Bin_Tanveer_CV.pdf">Download CV</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=nwkNbNIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+      <div class="card" style="display:flex;align-items:center;justify-content:center">
+        <img src="images/profile_chi.jpg" alt="Hammas Bin Tanveer portrait" style="width:100%;max-width:440px;border-radius:16px;object-fit:cover"/>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience & Education</h2>
+      <div class="two-col" style="grid-template-columns:1fr 1fr;align-items:start">
+        <!-- LEFT: Experience + Education -->
+        <div>
+          <div class="card timeline">
+            <div class="t-item">
+              <div><strong>SpaceX — Starlink</strong> · Data Engineer II · <span class="muted">Aug 2024 – Present</span></div>
+              <div class="muted">Network performance engineering; owner of high‑fidelity synthetic monitoring for user‑experience workloads (video calls, gaming, speed tests), global sensor fleet deployment & insights.</div>
+            </div>
+            <div class="t-item">
+              <div><strong>SPARTA Lab, University of Iowa</strong> · Research Assistant · <span class="muted">Aug 2019 – May 2025</span></div>
+              <div class="muted">IPv6 scanning/censorship measurement, honeyprefix telescopes, and ethical Internet measurements (Advisor: Prof. Rishab Nithyanand).</div>
+            </div>
+            <div class="t-item">
+              <div><strong>CAIDA, UC San Diego</strong> · Visiting Researcher · <span class="muted">May 2023 – Oct 2023</span></div>
+              <div class="muted">IPv6 block‑list generation methods and measurement infrastructure.</div>
+            </div>
+            <div class="t-item">
+              <div><strong>Censored Planet Lab, University of Michigan</strong> · Visiting Scholar · <span class="muted">Jun 2022 – Nov 2022</span></div>
+              <div class="muted">Censorship measurement methods (Advisor: Prof. Roya Ensafi).</div>
+            </div>
+            <div class="t-item">
+              <div><strong>Open Technology Fund</strong> · Senior Information Controls Fellow · <span class="muted">2022</span></div>
+              <div class="muted">Awarded funding to study Internet censorship over IPv6 with Censored Planet.</div>
+            </div>
+            <div class="t-item">
+              <div><strong>Teaching Assistant</strong> · University of Iowa · <span class="muted">2019 – 2020</span></div>
+              <div class="muted">Programming Languages (JavaScript, Haskell).</div>
+            </div>
+            <div class="t-item">
+              <div><strong>Teaching Assistant</strong> · LUMS · <span class="muted">2018 – 2019</span></div>
+              <div class="muted">Intro to Programming (C++), Operating Systems.</div>
+            </div>
+            <div class="t-item">
+              <div><strong>Technology for People Initiative (LUMS)</strong> · Research Assistant · <span class="muted">2018 – 2019</span></div>
+            </div>
+          </div>
+          <div class="card" style="margin-top:16px">
+            <h3 style="margin-top:0">Education</h3>
+            <p><strong>Ph.D., Computer Science</strong>, University of Iowa — <span class="muted">Aug 2019 – May 2025</span></p>
+            <p class="muted">Advisor: Prof. Rishab Nithyanand</p>
+            <p><strong>B.S., Computer Science</strong>, Lahore University of Management Sciences — <span class="muted">Aug 2015 – May 2019</span></p>
+            <p class="muted">Advisor: Prof. Fareed Zaffar</p>
+          </div>
+        </div>
+        <!-- RIGHT: Updates window -->
+        <div>
+          <div class="card updates-card">
+            <h3 style="margin-top:0">Updates (Last 6 Years)</h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.4">
+              <li><strong>Aug 2025:</strong> Posted IPv6 censorship preprints — <em>ProtoScan</em> and <em>Mind the IP Gap</em>. <a href="https://arxiv.org/abs/2508.07194" target="_blank" rel="noopener">ProtoScan</a> · <a href="https://arxiv.org/abs/2508.07197" target="_blank" rel="noopener">Mind the IP Gap</a></li>
+              <li><strong>Aug 2024:</strong> Presented at <em>NITRD Joint Engineering Team (JET)</em> — "Making Sense of Constellations" (slides PDF). <a href="https://www.nitrd.gov/nitrdgroups/images/2024/JET-Hammas-Bin-Tanveer-08202024.pdf" target="_blank" rel="noopener">PDF</a></li>
+              <li><strong>Aug 2024:</strong> Joined <strong>SpaceX — Starlink</strong> as Data Engineer II.</li>
+              <li><strong>Jul 2024:</strong> Talk coverage on Security Boulevard: USENIX Security ’23. <a href="https://securityboulevard.com/2024/07/usenix-security-23-glowing-in-the-dark-uncovering-ipv6-address-discovery-and-scanning-strategies-in-the-wild/" target="_blank" rel="noopener">Read</a></li>
+              <li><strong>Nov 2023:</strong> Invited talk — <em>IEEE VTS SAGWICS</em>, Starlink scheduling. <a href="https://vtsociety.org/event/lecture/making-sense-constellations-methodologies-understanding-starlinks-scheduling" target="_blank" rel="noopener">Event</a></li>
+              <li><strong>Nov 2023:</strong> Published <em>CoNEXT ’23</em> paper — Starlink scheduling methodologies. <a href="https://dl.acm.org/doi/10.1145/3624354.3630586" target="_blank" rel="noopener">Paper</a></li>
+              <li><strong>Aug 2023:</strong> Published <em>USENIX Security ’23</em> paper — IPv6 scanning strategies. <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer" target="_blank" rel="noopener">Paper</a></li>
+              <li><strong>Sep 2023:</strong> Invited talk — UCSD SysNet SysLunch on IPv6 scanner block‑lists.</li>
+              <li><strong>Mar 2022:</strong> Presented at <em>IETF 113 (MAPRG)</em> — Glowing in the Dark. <a href="https://datatracker.ietf.org/meeting/113/session/maprg" target="_blank" rel="noopener">Session</a> · <a href="https://www.youtube.com/watch?v=vYOBBT69IfI" target="_blank" rel="noopener">Video</a></li>
+              <li><strong>2022:</strong> Awarded <strong>Open Technology Fund — Information Controls Fellowship</strong> (Senior ICFP), <em>$35,000 for 6 months</em>. <a href="https://www.opentech.fund/fellows/hammas-bin-tanveer/" target="_blank" rel="noopener">Fellow page</a></li>
+              <li><strong>Jun–Nov 2022:</strong> Visiting Scholar, <em>Censored Planet Lab, University of Michigan</em>.</li>
+              <li><strong>Aug 2019:</strong> Began Ph.D., University of Iowa; served as Teaching Assistant (2019–2020).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="card">
+        <h3 style="margin-top:0">Peer‑Reviewed</h3>
+        <div class="pub">
+          <div><span class="badge">USENIX Security ’23</span></div>
+          <div>
+            <strong>Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild</strong><br/>
+            Hammas Bin Tanveer, Rachee Singh, Paul Pearce, Rishab Nithyanand.
+            <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div><span class="badge">CoNEXT ’23</span></div>
+          <div>
+            <strong>Making Sense of Constellations: Methodologies for Understanding Starlink’s Scheduling Algorithms</strong><br/>
+            Hammas Bin Tanveer, Mike Puchol, Rachee Singh, Antonio Bianchi, Rishab Nithyanand.
+            <a href="https://dl.acm.org/doi/10.1145/3624354.3630586" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div><span class="badge">CoNEXT ’25</span></div>
+          <div>
+            <strong>Unveiling IPv6 Scanning Dynamics: A Longitudinal Study Using Large‑Scale Proactive and Passive IPv6 Telescopes</strong> <em>(to appear)</em><br/>
+            Hammas Bin Tanveer, Echo (Wai Sun) Chan, Ricky K. P. Mok, Sebastian Kappes, Philipp Richter, Oliver Gasser, John Ronan, Arthur Berger, kc Claffy.
+            <a href="https://arxiv.org/abs/2508.07506" target="_blank" rel="noopener">arXiv</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nwkNbNIAAAAJ&citation_for_view=nwkNbNIAAAAJ:ufrVoPGSRksC" target="_blank" rel="noopener">Scholar</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3 style="margin-top:0">Preprints</h3>
+        <div class="pub">
+          <div><span class="badge">arXiv ’25</span></div>
+          <div>
+            <strong>ProtoScan: Measuring Censorship in IPv6</strong><br/>
+            Jack Wampler, <strong>Hammas Bin Tanveer</strong>, Rishab Nithyanand, Eric Wustrow.
+            <a href="https://arxiv.org/abs/2508.07194" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div><span class="badge">arXiv ’25</span></div>
+          <div>
+            <strong>Mind the IP Gap: Measuring the Impact of IPv6 on DNS Censorship</strong><br/>
+            Ian Martiny, <strong>Hammas Bin Tanveer</strong>, Jack Wampler, Rishab Nithyanand, Eric Wustrow.
+            <a href="https://arxiv.org/abs/2508.07197" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Invited Talks</h2>
+      <div class="card">
+        <ul style="margin:0;padding-left:18px">
+          <li><strong>IEEE VTS SAGWICS Seminar Series</strong> — <em>Methodologies for Understanding Starlink’s Scheduling Algorithms</em>, Nov 2023. <a href="https://vtsociety.org/event/lecture/making-sense-constellations-methodologies-understanding-starlinks-scheduling" target="_blank" rel="noopener">Event</a>.</li>
+          <li><strong>UCSD SysNet SysLunch</strong> — <em>Developing block‑list generation methods for IPv6 scanners</em>, Sep 2023.</li>
+          <li><strong>University of Iowa (CS3640)</strong> — <em>Starlink Scheduling</em>, Nov 2023; <em>IPv6 Scanning Strategies</em>, Oct 2022.</li>
+          <li><strong>IETF 113 (MAPRG)</strong> — <em>Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild</em>, Mar 2022.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="media">
+      <h2>Media & Mentions</h2>
+      <div class="card">
+        <ul style="margin:0;padding-left:18px">
+          <li>USENIX Security ’23 paper page — <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer" target="_blank" rel="noopener">Glowing in the Dark</a>.</li>
+          <li>YouTube: CoNEXT ’23 session — <em>Making Sense of Constellations</em>. <a href="https://www.youtube.com/watch?v=-9kBo578b-M" target="_blank" rel="noopener">Watch</a>.</li>
+          <li>YouTube: IETF 113 MAPRG — <em>Glowing in the Dark</em>. <a href="https://www.youtube.com/watch?v=vYOBBT69IfI" target="_blank" rel="noopener">Watch</a>. Session page: <a href="https://datatracker.ietf.org/meeting/113/session/maprg" target="_blank" rel="noopener">IETF Datatracker</a>.</li>
+          <li>IEEE VTS SAGWICS seminar listing — <a href="https://vtsociety.org/event/lecture/making-sense-constellations-methodologies-understanding-starlinks-scheduling" target="_blank" rel="noopener">Event page</a>.</li>
+          <li>NITRD JET presentation (Aug 20, 2024) — <a href="https://www.nitrd.gov/nitrdgroups/images/2024/JET-Hammas-Bin-Tanveer-08202024.pdf" target="_blank" rel="noopener">Slides PDF</a>.</li>
+          <li>Open Technology Fund — Senior Information Controls Fellow (ICFP) profile — <a href="https://www.opentech.fund/fellows/hammas-bin-tanveer/" target="_blank" rel="noopener">Fellow page</a>.</li>
+          <li>Michigan CSE story — <a href="https://cse.engin.umich.edu/stories/visiting-researcher-assesses-starlink-as-path-to-avoid-government-censorship" target="_blank" rel="noopener">Visiting researcher assesses Starlink...</a></li>
+          <li>Security Boulevard post referencing USENIX Security ’23 — <a href="https://securityboulevard.com/2024/07/usenix-security-23-glowing-in-the-dark-uncovering-ipv6-address-discovery-and-scanning-strategies-in-the-wild/" target="_blank" rel="noopener">Read</a>.</li>
+          <li>ResearchGate mirrors — <a href="https://www.researchgate.net/publication/372075022_Making_Sense_of_Constellations_Methodologies_for_Understanding_Starlink%27s_Scheduling_Algorithms" target="_blank" rel="noopener">Starlink Scheduling</a> · <a href="https://www.researchgate.net/publication/394439534_Mind_the_IP_Gap_Measuring_the_impact_of_IPv6_on_DNS_censorship" target="_blank" rel="noopener">Mind the IP Gap</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="two-col">
+        <div class="card">
+          <p><strong>Email:</strong> hammasbin.tanveer@spacex.com</p>
+          <p><strong>Links:</strong> <a href="https://scholar.google.com/citations?user=nwkNbNIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://www.linkedin.com/in/hammas-bin-tanveer-02aa12123/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://hammas9.github.io/" target="_blank" rel="noopener">GitHub Pages</a></p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Topics</h3>
+          <ul style="margin:0;padding-left:18px">
+            <li>IPv6 scanning/address discovery; honeyprefix/telescope methods</li>
+            <li>Censorship measurement (DNS/HTTP/TLS), ethics & reproducibility</li>
+            <li>Satellite/LEO networking performance and scheduling</li>
+            <li>Network measurement platforms, active/passive telemetry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="foot">
+        <div>© <span id="y"></span> Hammas Bin Tanveer</div>
+        <div>Built with semantic HTML & accessible CSS. Ready for GitHub Pages.</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    // Make updates scrollable only if longer than the left column
+    (function(){
+      var container = document.querySelector('#experience .two-col');
+      if(!container) return;
+      var cols = container.children;
+      if(cols.length < 2) return;
+      var left = cols[0];
+      var right = cols[1].querySelector('.updates-card');
+      if(!right) return;
+      // Allow layout to settle
+      requestAnimationFrame(function(){
+        var leftH = left.getBoundingClientRect().height;
+        var rightH = right.getBoundingClientRect().height;
+        if(rightH > leftH){
+          right.style.maxHeight = leftH + 'px';
+          right.style.overflow = 'auto';
+        } else {
+          right.style.maxHeight = 'none';
+          right.style.overflow = 'visible';
+        }
+      });
+      window.addEventListener('resize', function(){
+        var leftH = left.getBoundingClientRect().height;
+        right.style.maxHeight = 'none';
+        right.style.overflow = 'visible';
+        var rightH = right.getBoundingClientRect().height;
+        if(rightH > leftH){
+          right.style.maxHeight = leftH + 'px';
+          right.style.overflow = 'auto';
+        }
+      });
+    })();
+  </script>
 </body>
-
 </html>
