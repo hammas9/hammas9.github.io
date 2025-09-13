@@ -21,8 +21,8 @@
     .brand{display:flex;align-items:center;gap:14px}
     .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover}
     .title{font-weight:700;letter-spacing:0.2px}
-    .menu{display:flex;gap:18px;flex-wrap:wrap}
-    .menu a{font-weight:500;color:var(--muted)}
+    .menu{display:flex;gap:14px;flex-wrap:nowrap}
+    .menu a{font-weight:500;color:var(--muted);font-size:14px}
     .menu a:hover{color:var(--ink)}
     .hero{padding:56px 0;display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px;align-items:center}
     .hero h1{font-size:42px;line-height:1.1;margin:0 0 14px}
@@ -37,10 +37,10 @@
     .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}
     .muted{color:var(--muted)}
     .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .timeline{position:relative;padding-left:22px}
-    .timeline::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--line)}
-    .t-item{position:relative;margin-bottom:16px}
-    .t-item::before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(56,189,248,0.15)}
+    .timeline{position:relative;padding-left:28px}
+    .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--line)}
+    .t-item{position:relative;margin-bottom:16px;padding-left:16px}
+    .t-item::before{content:"";position:absolute;left:0;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(56,189,248,0.15)}
     .pub{display:grid;grid-template-columns:48px 1fr;gap:14px;margin-bottom:14px}
     .badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#0f172a;border:1px solid var(--line);font-size:12px;color:#cfeaff}
     .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#a9acb6;font-size:14px}
@@ -68,7 +68,7 @@
     <div class="container">
       <nav>
         <div class="brand">
-          <img src="images/profile_chi.jpg" alt="Hammas Bin Tanveer" class="avatar" />
+          <img src="images/IMG_1702.jpg" alt="Hammas Bin Tanveer" class="avatar" />
           <div>
             <div class="title">Hammas Bin Tanveer</div>
             <div class="muted" style="font-size:13px">IPv6 • Censorship Measurement • Satellite Networking</div>
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="card" style="display:flex;align-items:center;justify-content:center">
-        <img src="images/profile_chi.jpg" alt="Hammas Bin Tanveer portrait" style="width:100%;max-width:440px;border-radius:16px;object-fit:cover"/>
+        <img src="images/IMG_1702.jpg" alt="Hammas Bin Tanveer portrait" style="width:100%;max-width:440px;border-radius:16px;object-fit:cover"/>
       </div>
     </section>
 
@@ -178,24 +178,24 @@
         <div class="pub">
           <div><span class="badge">USENIX Security ’23</span></div>
           <div>
-            <strong>Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild</strong><br/>
-            Hammas Bin Tanveer, Rachee Singh, Paul Pearce, Rishab Nithyanand.
+            <strong>Glowing in the Dark: Uncovering IPv6 Address Discovery and Scanning Strategies in the Wild<br/>
+            <strong>Hammas Bin Tanveer</strong>, Rachee Singh, Paul Pearce, Rishab Nithyanand.
             <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/bin-tanveer" target="_blank" rel="noopener">Paper</a>
           </div>
         </div>
         <div class="pub">
           <div><span class="badge">CoNEXT ’23</span></div>
           <div>
-            <strong>Making Sense of Constellations: Methodologies for Understanding Starlink’s Scheduling Algorithms</strong><br/>
-            Hammas Bin Tanveer, Mike Puchol, Rachee Singh, Antonio Bianchi, Rishab Nithyanand.
+            <strong>Making Sense of Constellations: Methodologies for Understanding Starlink’s Scheduling Algorithms<br/>
+            <strong>Hammas Bin Tanveer</strong>, Mike Puchol, Rachee Singh, Antonio Bianchi, Rishab Nithyanand.
             <a href="https://dl.acm.org/doi/10.1145/3624354.3630586" target="_blank" rel="noopener">Paper</a>
           </div>
         </div>
         <div class="pub">
           <div><span class="badge">CoNEXT ’25</span></div>
           <div>
-            <strong>Unveiling IPv6 Scanning Dynamics: A Longitudinal Study Using Large‑Scale Proactive and Passive IPv6 Telescopes</strong> <em>(to appear)</em><br/>
-            Hammas Bin Tanveer, Echo (Wai Sun) Chan, Ricky K. P. Mok, Sebastian Kappes, Philipp Richter, Oliver Gasser, John Ronan, Arthur Berger, kc Claffy.
+            <strong>Unveiling IPv6 Scanning Dynamics: A Longitudinal Study Using Large‑Scale Proactive and Passive IPv6 Telescopes <em>(to appear)</em><br/>
+            <strong>Hammas Bin Tanveer</strong>, Echo (Wai Sun) Chan, Ricky K. P. Mok, Sebastian Kappes, Philipp Richter, Oliver Gasser, John Ronan, Arthur Berger, kc Claffy.
             <a href="https://arxiv.org/abs/2508.07506" target="_blank" rel="noopener">arXiv</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nwkNbNIAAAAJ&citation_for_view=nwkNbNIAAAAJ:ufrVoPGSRksC" target="_blank" rel="noopener">Scholar</a>
           </div>
         </div>
